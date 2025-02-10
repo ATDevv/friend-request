@@ -141,7 +141,10 @@
                 </div>
 
                 <div>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i
+                        class="fa-solid fa-arrow-right cursor-pointer"
+                        onclick="handleArrow()"
+                    ></i>
                 </div>
             </div>
 
@@ -156,6 +159,10 @@
 
             const handleConfirm = (ele) => {
                 ele.parentElement.remove()
+            }
+
+            const handleArrow = () => {
+                alert('Hết ròi :v')
             }
         </script>
     </body>
