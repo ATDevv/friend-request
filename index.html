@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Friend Request</title>
+    </head>
+    <body>
+        <div class="p-5 border rounded-md border-gray-300 max-w-[700px] m-5">
+            <div class="flex justify-between items-center">
+                <h2 class="text-lg text-gray-600 font-medium">
+                    Friend Request
+                </h2>
+                <i class="fa-solid fa-ellipsis cursor-pointer"></i>
+            </div>
+
+            <div class="flex gap-4 items-center">
+                <div
+                    class="user w-[200px] mt-[25px] border rounded-lg border-gray-300 shadow-xl overflow-hidden flex flex-col gap-2"
+                >
+                    <div class="img w-full h-[200px] flex">
+                        <img
+                            src="src/dog2.jpg"
+                            alt="ava"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="px-2 py-1">
+                        <div class="font-medium">Đinh Tuấn Anh</div>
+                        <div class="flex gap-1 mt-1 relative">
+                            <img
+                                src="src/hamster.webp"
+                                alt=""
+                                class="w-5 h-5 rounded-full z-1"
+                            />
+                            <img
+                                src="src/srccat.webp"
+                                alt=""
+                                class="w-5 h-5 rounded-full -left-[-10px] absolute z-0"
+                            />
+                            <p class="text-gray-600 text-sm ml-[12px]">
+                                19 mutial friends
+                            </p>
+                        </div>
+                    </div>
+                    <button
+                        class="text-blue-500 font-medium border-transparent rounded-sm py-1 bg-blue-100 cursor-pointer px-2 mx-auto w-[180px]"
+                        onclick="handleConfirm(this)"
+                    >
+                        Confirm
+                    </button>
+                    <button
+                        class="text-black font-medium border-transparent rounded-sm py-1 bg-gray-300 cursor-pointer px-2 w-[180px] mx-auto mb-[10px]"
+                        onclick="handleConfirm(this)"
+                    >
+                        Delete
+                    </button>
+                </div>
+
+                <div
+                    class="user w-[200px] mt-[25px] border rounded-lg border-gray-300 shadow-xl overflow-hidden flex flex-col gap-2"
+                >
+                    <div class="img w-full h-[200px] flex">
+                        <img
+                            src="src/hamster.webp"
+                            alt="ava"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="px-2 py-1">
+                        <div class="font-medium">Đinh Tuấn Anh</div>
+                        <div class="flex gap-1 mt-1">
+                            <!-- <img
+                          src="src/hamster.webp"
+                          alt=""
+                          class="w-5 h-5 rounded-full"
+                      /> -->
+                            <p class="text-gray-600 text-sm text-white">
+                                20 mutial friends
+                            </p>
+                        </div>
+                    </div>
+                    <button
+                        class="text-blue-500 font-medium border-transparent rounded-sm py-1 bg-blue-100 cursor-pointer px-2 w-[180px] mx-auto"
+                        onclick="handleConfirm(this)"
+                    >
+                        Confirm
+                    </button>
+                    <button
+                        class="text-black font-medium border-transparent rounded-sm py-1 bg-gray-300 cursor-pointer px-2 w-[180px] mx-auto mb-[10px]"
+                        onclick="handleConfirm(this)"
+                    >
+                        Delete
+                    </button>
+                </div>
+
+                <div
+                    class="user w-[200px] mt-[25px] border rounded-lg border-gray-300 shadow-xl overflow-hidden flex flex-col gap-2"
+                >
+                    <div class="img w-full h-[200px] flex">
+                        <img
+                            src="src/cat.webp"
+                            alt="ava"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="px-2 py-1">
+                        <div class="font-medium">Đinh Tuấn Anh</div>
+                        <div class="flex gap-1 mt-1">
+                            <img
+                                src="src/cat.webp"
+                                alt=""
+                                class="w-5 h-5 rounded-full"
+                            />
+                            <p class="text-gray-600 text-sm">
+                                21 mutial friends
+                            </p>
+                        </div>
+                    </div>
+                    <button
+                        class="text-blue-500 font-medium border-transparent rounded-sm py-1 bg-blue-100 cursor-pointer px-2 w-[180px] mx-auto"
+                        onclick="handleConfirm(this)"
+                    >
+                        Confirm
+                    </button>
+                    <button
+                        class="text-black font-medium border-transparent rounded-sm py-1 bg-gray-300 cursor-pointer px-2 w-[180px] mx-auto mb-[10px]"
+                        onclick="handleConfirm(this)"
+                    >
+                        Delete
+                    </button>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="seeall text-center mt-[20px]">
+                <button class="text-blue-500 cursor-pointer">See All</button>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.seeall').addEventListener('click', () => {
+                alert('Làm gì còn ai add đâu :vv')
+            })
+
+            const handleConfirm = (ele) => {
+                ele.parentElement.remove()
+            }
+        </script>
+    </body>
+</html>
