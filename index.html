@@ -15,7 +15,7 @@
         <title>Friend Request</title>
     </head>
     <body>
-        <div class="p-5 border rounded-md border-gray-300 max-w-[700px] m-5">
+        <div class="max-w-[250px] flex flex-col p-5 border rounded-md border-gray-300 m-5 sm:max-w-[700px]">
             <div class="flex justify-between items-center">
                 <h2 class="text-lg text-gray-600 font-medium">
                     Friend Request
@@ -23,7 +23,7 @@
                 <i class="fa-solid fa-ellipsis cursor-pointer"></i>
             </div>
 
-            <div class="flex gap-4 items-center">
+            <div class="flex flex-col gap-4 items-center sm:flex-row">
                 <div
                     class="user w-[200px] mt-[25px] border rounded-lg border-gray-300 shadow-xl overflow-hidden flex flex-col gap-2"
                 >
@@ -142,7 +142,7 @@
 
                 <div>
                     <i
-                        class="fa-solid fa-arrow-right cursor-pointer"
+                        class="hidden sm:fa-solid sm:fa-arrow-right sm:cursor-pointer"
                         onclick="handleArrow()"
                     ></i>
                 </div>
